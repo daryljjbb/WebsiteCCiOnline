@@ -1,57 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+  <body>
     <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav me-auto"> <!-- Pushes links to the left -->
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger" href="index.html">CCiOnline</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto"> <!-- Pushes links to the left -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
 
-                <!-- Buttons inside the collapsible navbar -->
-                <div class="d-flex ms-auto">
-                    <button class="btn btn-outline-success me-2" type="button" onclick="location.href='login.html'">Login</button>
-                    <button class="btn btn-outline-primary" type="button" onclick="location.href='register.html'">Register</button>
+                  <!-- Buttons inside the collapsible navbar -->
+                    <div class="d-flex ms-auto gap-3">
+                        <button class="btn btn-outline-success me-2" type="button" onclick="location.href='login.html'">Login</button>
+                        <div class="vr "></div>
+                        <button class="btn btn-outline-primary" type="button" onclick="location.href='register.html'">Register</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5 text-center">
+      <div>
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col-6">
+                <h2>Experience what the Cloud</h2>
+            </div>
+            <div class="col">
+                <img src="#" alt="cloud image">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col-6">
+                <h2>Can do for you!</h2>
+            </div>
+            <div class="col">
+
+            </div>
+
+        </div>
+       
+      </div>
+    </div>
+    <div class="container mt-5">
+       <div class="row">
+            <div class="col-6">
+                <h5 class="text-dark-emphasis"><span>☛ </span>Policy Forms</h5>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-6">
+                <h5 class="text-dark-emphasis"><span>☛ </span>Policy Management</h5>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-6">
+            <h5 class="text-dark-emphasis"><span>☛  </span>Dedicated Support</h5>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+       <div class="border border-2 border-dark-subtle rounded-3 p-3" id="demo-section">
+
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="text-danger">Try CCiOnline FREE for 14 days.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h5 class="text-dark-emphasis fst-italic fw-light">Try any product right now with no obligation.</h5>
+                </div>
+                <div class="col-4">
+
+                </div>
+                <div class="col">
+                    <button class="btn btn-danger rounded-3" type="button" onclick="location.href='register.html'">Free Demo</button>
+            </div>
+            
+       </div>
+    </div>
+    <div class="container mt-5 text-center">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-dark fst-italic">Simply Better Agency Management</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 mx-auto" style="max-width: 80%;">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4 gap-5">
+        <div class="col d-flex justify-content-center">
+            <div class="card text-center" id="card1" style="width: 16rem;">
+                <div class="p-2 fs-3">⌛</div>
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Save Time</h5>
+                    <p class="card-text">Intuitive and easy to use, our software offers a great user experience which means less time spent on input and more time spent on sales.</p>
+                    <button class="btn border-none" type="button" onclick="location.href='register.html'">Try Now</button>
                 </div>
             </div>
         </div>
-    </nav>
-</header>
+        <div class="col d-flex justify-content-center">
+            <div class="card text-center" id="card2" style="width: 16rem;">
+                <div class="p-2 fs-3">📈</div>
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Increase Sales</h5>
+                    <p class="card-text">Tools you need to get and keep business, like fast and accurate quoting, custom letter generator, and extensive reports.</p>
+                    <button class="btn border-none" type="button" onclick="location.href='register.html'">Try Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <div class="card text-center" id="card3" style="width: 16rem;">
+                <div class="p-2 fs-3">📞</div>
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Get Results</h5>
+                    <p class="card-text">With the included online agency rater, your customers can shop the carriers you represent on your website from their home computer or mobile device.</p>
+                    <button class="btn border-none" type="button" onclick="location.href='register.html'">Try Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+    <div class="container mt-5 text-center">
+        <div class="row " >
+            <div class="col-3">
+            
+            </div>
+            <div class="col-6" id="ccionline_features">
+                <h3 class="text-danger">CCiOnline Features</h3>
+            </div>
+            <div class="col-3">
+               
+            </div>
+        </div>
 
-
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-`
-    
-</body>
+        <div class="container mt-5 text-start">
+        <div class="row " >
+            <div class="col-3">
+            
+            </div>
+            <div class="col-6" >
+                <ul class="list-group">
+                    <li class="list-group-item w-75">Agency Management</li>
+                    <li class="list-group-item w-75">All Nationwide Forms</li>
+                    <li class="list-group-item w-75">All State Specific Forms</li>
+                    <li class="list-group-item w-75">Certificates of Insurance</li>
+                    <li class="list-group-item w-75">Self-Serve Certificates</li>
+                    <li class="list-group-item w-75">Print, Email or Download Forms</li>
+                    <li class="list-group-item w-75">Inter-office Communication</li>
+                    <li class="list-group-item w-75">Task Calendar</li>
+                    <li class="list-group-item w-75">Mobile Companion App</li>
+                    <li class="list-group-item w-75">Extensive Reports</li>
+                </ul>
+            </div>
+            <div class="col-3">
+               
+            </div>
+        </div>
+         
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
 </html>
