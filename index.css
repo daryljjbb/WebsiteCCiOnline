@@ -3,7 +3,7 @@
 @import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 body{
-    background-color: #F2F0EA;
+    background: #f8f9fa;
 }
 
 #demo-section {
@@ -12,21 +12,25 @@ body{
     background-color: white;
     box-shadow: 4px 4px 4px 4px rgba(32, 178, 170, 0.5); /* Teal shadow */
 }
-#card1{
-    border: 1px solid lightslategray;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px 4px rgba(32, 178, 170, 0.5); /* Teal shadow */
+
+#card1, #card2, #card3 {
+    position: relative;
+    border: 3px solid transparent; /* Prevents harsh edges */
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #ffffff, #f1f1f1) padding-box, 
+                linear-gradient(45deg, rgba(0, 150, 136, 0.7), rgba(0, 120, 215, 0.7), rgba(25, 25, 112, 0.8)) border-box;
+    box-shadow: 6px 6px 12px rgba(0, 150, 136, 0.3); /* Softer teal shadow */
+    transition: all 0.3s ease-in-out;
 }
-#card2{
-    border: 1px solid lightslategray;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px 4px rgba(32, 178, 170, 0.5); /* Teal shadow */
+
+#card1:hover, #card2:hover, #card3:hover {
+    box-shadow: 8px 8px 15px rgba(0, 120, 215, 0.5); /* Deepened shadow on hover */
+    transform: scale(1.02); /* Gentle pop effect */
 }
-#card3{
-    border: 1px solid lightslategray;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px 4px rgba(32, 178, 170, 0.5); /* Teal shadow */
-}  
+
+
+
+
 
 #ccionline_features{
     width:40%;
@@ -35,4 +39,7 @@ body{
     box-shadow: 4px 4px 4px 4px rgba(32, 178, 170, 0.5); /* Teal shadow */
     background-color: lightgray;
     padding: 20px 10px 20px 10px;
+}
+.list-group-item span{
+    color: rgba(32, 178, 170, 0.5);
 }
