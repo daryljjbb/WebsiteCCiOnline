@@ -4,54 +4,106 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="about.css">
 </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand text-danger" href="index.html">CCiOnline</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav me-auto"> <!-- Pushes links to the left -->
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+        <div class="nav_container">
+            <nav>
+                <div class="logo">
+                    <h1>CCiOnline</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><button class="log_button"><a href="login.html">Login</a></button></li>
+                    <li><button class="reg_button"><a href="register.html">Register</a></button></li>
+                </ul>
+                 
+            </nav>
+            <!--this is the hamburger menu section-->
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="top_container">
+                <div id="top_left_section">
+                    <div id="top_left_item1">A business you can rely on over 30 years</div>
 
-                    <!-- Buttons inside the collapsible navbar -->
-                    <div class="d-flex ms-auto gap-3">
-                        <button class="btn btn-outline-success rounded-pill me-2" type="button" onclick="location.href='login.html'">Login</button>
-                        <div class="vr "></div>
-                        <button class="btn btn-outline-primary rounded-pill" type="button" onclick="location.href='register.html'">Register</button>
+
+                </div>
+                <div id="top_right_section">
+
+                </div>
+                    
+            </div>
+        </section>
+        <section>
+            <div id="card_container">
+                <div class="card" id="card1">
+                    <div class="card_title">
+                        <h3>Our Story</h3>
+                    </div>
+                    <div class="card_desc">
+                        <p>In the early 1980s, brothers Luther and Michael were intrigued by the emergence of affordable
+                         personal computing. They read all they could on the subject and even built their own computer from
+                         parts they had acquired. To share their knowledge and enthusiasm for this new field, they founded a
+                        computer literacy school to teach small business owners how to use this powerful technology. One of their
+                        students, an independent insurance agent, asked the prophetic question: "Can personal computers be used to
+                        rate and compare multiple insurance companies to find the best rate?" The answer was of course, "Yes". They
+                        authored the first version of CCiRater shortly thereafter and introduced comparative rating to the insurance industry.</p>
+
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <div class="card_title">
+                        <h3>Pioneers in Comparative Rating</h3>
+                    </div>
+                    <div class="card_desc">
+                        <p>Since 1983, CCiComputer Services, Inc. has provided Comparative Rating and Policy Management solutions to independent
+                        insurance agents across the Gulf South and, now, the nation. We pioneered computer-based comparative rating and were the 
+                        first to offer a comprehensive all-in-one solution for rating and policy management.</p>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <div class="card_title">
+                        <h3>Commitment to Quality</h3>
+                    </div>
+                    <div class="card_desc">
+                        <p>For over three decades, our commitment to providing quality agency products at an affordable price has made us a leader
+                        in the field. Easy to use and intuitive, CCiRater sets the mark for agency management software. We help independent agents
+                        navigate the challenging and competitive environment in which they operate.</p>
+                    </div>
+                </div>
+                <div class="card" id="card4">
+                    <div class="card_title">
+                        <h3>Since 1983</h3>
+                    </div>
+                    <div class="card_desc">
+                        <p>Based in the Greater New Orleans area in Louisiana, CCiComputer Services, Inc. brings southern hospitality to the business
+                        world. Our dedicated support team shares a genuine concern for our customer's success, and we will do whatever it takes to make
+                        you happy and your agency profitable.</p>
+                    </div>
+                </div>
+                <div class="card" id="card5">
+                    <div class="card_title">
+                        <h3>Give us a call</h3>
+                    </div>
+                    <div class="card_desc">
+                        <p>Call us today at 800-899-2831 or email us at ccirater@ccirater.com. We look forward to hearing from you!</p>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container mt-5">
-      <h1>About Page</h1>
-      <p>Welcome to the About page!</p>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+        </section>
+    </main>
+   
+    <script src="about.js" type="text/javascript"></script>
   </body>
 </html>
