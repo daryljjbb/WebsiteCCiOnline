@@ -16,17 +16,12 @@ document.querySelector(".reg_button").addEventListener("click", function() {
     window.location.href = "register.html";
 });
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-        } else {
-            entry.target.classList.remove("visible"); // Removes class when scrolling up
+document.addEventListener("scroll", function() {
+    document.querySelectorAll(".scroll-fade").forEach((element) => {
+        let position = element.getBoundingClientRect().top;
+        let windowHeight = window.innerHeight;
+        if (position < windowHeight - 100) {
+            element.classList.add("visible");
         }
     });
-}, { threshold: 0.1 });
-
-document.querySelectorAll(".scroll-fade").forEach(element => {
-    observer.observe(element);
 });
-
