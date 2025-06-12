@@ -138,13 +138,6 @@ header .logo{
    
 }
 
-.nav-links:hover {
-    background: linear-gradient(45deg, #45a29e, #74ecd2); /* Swaps gradient colors */
-    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.6); /* Gentle cyan glow */
-    transform: scale(1.02)!important; /* Slight enlargement */
-    transition:transform 0.3s ease-in-out; /* Smooth effect */
-}
-
 
 .nav-links li a:hover {
     color: #ff6f61; /* Change text color */
